@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy · Pickleball Watch Scorer</title>
+    <meta name="description" content="Learn how Pickleball Watch Scorer handles your data and keeps your information secure.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="privacy-page">
+    <header class="site-header">
+        <div class="container">
+            <div class="branding">
+                <span class="app-icon" aria-hidden="true">PB</span>
+                <div>
+                    <h1>Pickleball Watch Scorer</h1>
+                    <p class="tagline">Privacy Policy</p>
+                </div>
+            </div>
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#policy">Policy</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section" id="policy">
+        <div class="container privacy-content">
+            <h2>Privacy Policy</h2>
+            <p>Nova Computing built Pickleball Watch Scorer to help players stay focused on the court. Protecting your privacy is fundamental to that mission. This policy explains what data we collect, how we use it, and the choices you have.</p>
+
+            <h3>Data we collect</h3>
+            <ul>
+                <li><strong>Match data:</strong> Scores, rally summaries, and player names are stored locally on your Apple Watch and optionally synced to your paired iPhone via SwiftData.</li>
+                <li><strong>Analytics:</strong> We collect anonymized crash logs and basic usage metrics through Apple-provided services to improve reliability.</li>
+                <li><strong>Support:</strong> If you contact us at <a href="mailto:pickleball@novacomputing.ca">pickleball@novacomputing.ca</a>, we retain the correspondence so we can assist you.</li>
+            </ul>
+
+            <h3>How we use data</h3>
+            <p>Match data remains on your devices unless you choose to export it. Aggregated analytics help us prioritize bug fixes and new features. We do not sell personal data or share it with advertisers.</p>
+
+            <h3>Data retention</h3>
+            <p>You control your match history. Delete games at any time from the app to remove them from both Apple Watch and iPhone storage. Support emails are archived for up to 12 months to maintain context for ongoing issues.</p>
+
+            <h3>Children's privacy</h3>
+            <p>Pickleball Watch Scorer is rated 4+. We do not knowingly collect data from children under 13 beyond what is necessary for app functionality.</p>
+
+            <h3>Your rights</h3>
+            <p>If you would like to access, correct, or delete information you have shared with us, contact <a href="mailto:pickleball@novacomputing.ca">pickleball@novacomputing.ca</a>. We will respond within 30 days.</p>
+
+            <h3>Policy updates</h3>
+            <p>We may update this policy to reflect improvements or legal requirements. Material changes will be posted here and noted in the app release notes.</p>
+
+            <h3 id="contact">Contact</h3>
+            <p>Email <a href="mailto:pickleball@novacomputing.ca">pickleball@novacomputing.ca</a> with privacy questions or concerns.</p>
+
+            <p class="effective-date">Effective date: August 26, 2024</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; <span id="year"></span> Nova Computing. All rights reserved.</p>
+            <a href="index.html">Back to home</a>
+        </div>
+    </footer>
+
+    <script>
+        const yearEl = document.getElementById("year");
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>
