@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Rally Score</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            background: #f5f5f7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+
+        .tagline {
+            color: #86868b;
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #515154;
+        }
+
+        ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #515154;
+        }
+
+        .feature-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .feature-box h2 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .feature-box p {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .info-box {
+            background: #f5f5f7;
+            border-left: 4px solid #007AFF;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .info-box strong {
+            color: #007AFF;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box strong {
+            color: #856404;
+        }
+
+        .tip-box {
+            background: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .tip-box strong {
+            color: #0c5460;
+        }
+
+        .contact-section {
+            background: #007AFF;
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .contact-section h2 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .contact-section p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.1rem;
+        }
+
+        .contact-section a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 2px solid rgba(255,255,255,0.5);
+        }
+
+        .contact-section a:hover {
+            border-bottom-color: white;
+        }
+
+        .faq-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #d2d2d7;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #1d1d1f;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #515154;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #d2d2d7;
+            text-align: center;
+            color: #86868b;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            background: #f5f5f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rally Score Support</h1>
+            <p class="tagline">Your guide to scoring pickleball matches like a pro</p>
+        </div>
+
+        <div class="feature-box">
+            <h2>Welcome to Rally Score!</h2>
+            <p>Rally Score is the smartest way to score pickleball matches from your wrist. This guide will help you get started and make the most of all features.</p>
+        </div>
+
+        <h2>Getting Started</h2>
+
+        <h3>Starting Your First Match</h3>
+        <ol>
+            <li>Open Rally Score on your Apple Watch</li>
+            <li>Tap <strong>"Start Match"</strong></li>
+            <li>Enter team names (e.g., "Team Red" and "Team Blue")</li>
+            <li>Select your preferred scoring mode:
+                <ul>
+                    <li><strong>Side-Out:</strong> Traditional scoring (only serving team scores)</li>
+                    <li><strong>Rally:</strong> New 2025 rules (point on every rally)</li>
+                </ul>
+            </li>
+            <li>Choose point target: <strong>11</strong> (standard), <strong>15</strong>, or <strong>21</strong></li>
+            <li>Tap <strong>"Start Match"</strong></li>
+        </ol>
+
+        <div class="tip-box">
+            <strong>💡 Pro Tip:</strong> If you're new to pickleball, start with Side-Out scoring at 11 points – it's the most common format for recreational play.
+        </div>
+
+        <h3>Scoring Points</h3>
+        <p>Once your match is underway, scoring is incredibly simple:</p>
+        <ul>
+            <li>Tap <strong>"Team A Wins Rally"</strong> when Team A wins the rally</li>
+            <li>Tap <strong>"Team B Wins Rally"</strong> when Team B wins the rally</li>
+            <li>Rally Score automatically handles all service rotation</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>How It Works:</strong> In side-out scoring, only the serving team scores points. If the receiving team wins, they don't get a point but they do get the serve (side-out). Rally Score handles this automatically!
+        </div>
+
+        <h3>Using Undo</h3>
+        <p>Made a mistake? No problem:</p>
+        <ol>
+            <li>Tap the <strong>"Undo"</strong> button</li>
+            <li>The last rally will be reversed</li>
+            <li>Score and server position return to previous state</li>
+        </ol>
+
+        <div class="warning-box">
+            <strong>⚠️ Note:</strong> You can only undo the most recent rally. If you need to go back further, you'll need to end the match and start fresh.
+        </div>
+
+        <h2>Understanding Service Rotation</h2>
+
+        <h3>The 0-0-2 Start</h3>
+        <p>According to USA Pickleball rules, matches always start with the "second server" (shown as <code>0-0-2</code>). This means:</p>
+        <ul>
+            <li>The first serving team starts with server #2</li>
+            <li>After one side-out, the opponent gets both servers (#1 and #2)</li>
+            <li>This ensures fairness in doubles play</li>
+        </ul>
+
+        <h3>Server Rotation (Doubles)</h3>
+        <p>Rally Score automatically manages the rotation:</p>
+        <ol>
+            <li><strong>Server 1:</strong> First server for the serving team</li>
+            <li><strong>Server 2:</strong> Second server (after Server 1 loses a rally)</li>
+            <li><strong>Side-Out:</strong> When Server 2 loses, serve passes to opponent</li>
+        </ol>
+
+        <h3>Even/Odd Positioning</h3>
+        <p>Watch for the service court indicator:</p>
+        <ul>
+            <li><strong>Even (Right):</strong> Server stands on right when team score is even (0, 2, 4, 6...)</li>
+            <li><strong>Odd (Left):</strong> Server stands on left when team score is odd (1, 3, 5, 7...)</li>
+        </ul>
+
+        <div class="tip-box">
+            <strong>💡 Pro Tip:</strong> You don't need to memorize these rules! Rally Score shows you exactly where the server should stand with visual indicators.
+        </div>
+
+        <h2>Match Management</h2>
+
+        <h3>Ending a Match</h3>
+        <p>Games end automatically when win conditions are met:</p>
+        <ul>
+            <li>A team reaches the target score (11, 15, or 21)</li>
+            <li><strong>AND</strong> has a 2+ point lead (win-by-2 rule)</li>
+        </ul>
+        <p>You can also manually end a match early:</p>
+        <ol>
+            <li>Tap <strong>"End Match"</strong></li>
+            <li>Confirm the action</li>
+            <li>Match is saved to history with current score</li>
+        </ol>
+
+        <h3>Change Ends Prompt</h3>
+        <p>Rally Score automatically prompts you to switch ends at the midpoint:</p>
+        <ul>
+            <li><strong>11-point games:</strong> Switch at 6 points</li>
+            <li><strong>15-point games:</strong> Switch at 8 points</li>
+            <li><strong>21-point games:</strong> Switch at 11 points</li>
+        </ul>
+
+        <h3>Viewing Match History</h3>
+        <ol>
+            <li>Scroll down on main watch screen</li>
+            <li>Tap <strong>"History"</strong></li>
+            <li>See your last 10 completed matches</li>
+            <li>Tap any match to view full details</li>
+            <li>Swipe left on a match to delete it</li>
+        </ol>
+
+        <h2>iPhone Companion</h2>
+
+        <h3>Live Activities</h3>
+        <p>Live Activities appear automatically on your iPhone lock screen when you start a match on your watch:</p>
+        <ul>
+            <li>Shows real-time score updates</li>
+            <li>Indicates which team is serving</li>
+            <li>Displays server number for doubles</li>
+            <li>Tap to open full spectator screen</li>
+        </ul>
+
+        <div class="info-box">
+            <strong>Requirements:</strong> Live Activities require iOS 17.0 or later. Dynamic Island compact view requires iPhone 14 Pro or later.
+        </div>
+
+        <h3>Spectator Screen</h3>
+        <p>Perfect for coaches and spectators:</p>
+        <ul>
+            <li>Large, courtside-optimized scoreboard</li>
+            <li>High-contrast design for outdoor viewing</li>
+            <li>Shows current score, serving team, and progress</li>
+            <li>Supports AirPlay for external displays</li>
+        </ul>
+
+        <h2>Scoring Modes Explained</h2>
+
+        <h3>Side-Out Scoring (Traditional)</h3>
+        <p>The classic pickleball scoring method:</p>
+        <ul>
+            <li>Only the serving team can score points</li>
+            <li>Receiving team wins rally → side-out (no point awarded)</li>
+            <li>Standard for recreational and competitive play</li>
+            <li>Most common format in clubs and tournaments</li>
+        </ul>
+
+        <h3>Rally Scoring (2025 Provisional Rules)</h3>
+        <p>The new scoring method being tested:</p>
+        <ul>
+            <li>Points awarded on <strong>every</strong> rally</li>
+            <li><strong>Game-Point Freeze:</strong> Non-serving team cannot win on game point</li>
+            <li><strong>Freeze-at-20 Variant:</strong> Alternative rec mode that freezes scoring at 20+ points</li>
+            <li>Points must be won on serve to complete game</li>
+            <li>Speeds up gameplay (fewer rallies needed)</li>
+        </ul>
+
+        <div class="tip-box">
+            <strong>💡 When to Use Rally Scoring:</strong> Try rally scoring for faster-paced games or when you want to experiment with the new 2025 rules. It's great for time-limited play sessions.
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Does Rally Score require internet?</div>
+            <div class="faq-answer">No! Rally Score works completely offline. All match data is stored locally on your device.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Can I use Rally Score for singles matches?</div>
+            <div class="faq-answer">Yes! Rally Score supports both singles and doubles formats. The service rotation automatically adapts.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: How many matches can I save?</div>
+            <div class="faq-answer">The current version stores your last 10 completed matches. Pro tier (coming soon) will offer unlimited history.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: What if the score seems wrong?</div>
+            <div class="faq-answer">Use the "Undo" button to step back one rally. Remember: in side-out mode, only the serving team scores points. Check the "On Serve" indicator to see who's currently serving.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Does Rally Score support tournament formats?</div>
+            <div class="faq-answer">Currently, Rally Score is designed for single-game match play. Multi-game match support (best of 3, best of 5) is planned for future versions.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Why isn't the Live Activity showing on my iPhone?</div>
+            <div class="faq-answer">
+                Ensure:
+                <ul>
+                    <li>Your iPhone is running iOS 17.0 or later</li>
+                    <li>Live Activities are enabled in Settings → Notifications</li>
+                    <li>Your iPhone and Apple Watch are paired</li>
+                    <li>You've started a match on the watch (not iPhone)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Can I customize team colors?</div>
+            <div class="faq-answer">Custom color themes are planned for the Pro tier, coming soon. The current version uses default team colors (red and blue).</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: What's the difference between side-out and rally scoring?</div>
+            <div class="faq-answer">Side-out awards points only to the serving team. Rally scoring awards a point on every rally, but with special freeze rules at game point to ensure the winning team is on serve.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: What is the Stacking Coach feature?</div>
+            <div class="faq-answer">The Stacking Coach (coming in v1.2) will show you and your partner exactly where to stand before each serve, with legal positioning guidance and post-serve movement suggestions for optimal team formations.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Can I export my match data?</div>
+            <div class="faq-answer">CSV export is planned for a future Pro tier update. This will allow you to export match statistics for analysis.</div>
+        </div>
+
+        <h2>Troubleshooting</h2>
+
+        <h3>Match Won't Start</h3>
+        <ul>
+            <li>Ensure both team names are entered</li>
+            <li>Check that you've selected a scoring mode</li>
+            <li>Verify you've chosen a point target (11/15/21)</li>
+            <li>Try restarting the app if needed</li>
+        </ul>
+
+        <h3>Live Activity Not Showing</h3>
+        <ul>
+            <li>Check iOS version (must be 17.0+)</li>
+            <li>Verify Live Activities are enabled in Settings</li>
+            <li>Ensure devices are paired and connected</li>
+            <li>Try restarting both watch and iPhone</li>
+        </ul>
+
+        <h3>Haptics Not Working</h3>
+        <ul>
+            <li>Check that haptics aren't disabled in watch settings</li>
+            <li>Ensure watch isn't in Theater Mode</li>
+            <li>Verify watch is on wrist (haptics only work when worn)</li>
+        </ul>
+
+        <h3>App Crashes or Freezes</h3>
+        <ul>
+            <li>Force quit the app and restart</li>
+            <li>Restart your Apple Watch</li>
+            <li>Ensure you're running the latest watchOS version</li>
+            <li>If problem persists, contact support (see below)</li>
+        </ul>
+
+        <h2>System Requirements</h2>
+
+        <h3>Apple Watch</h3>
+        <ul>
+            <li><strong>Minimum:</strong> Apple Watch Series 4 or later</li>
+            <li><strong>watchOS:</strong> 10.0 or later</li>
+            <li><strong>Storage:</strong> ~5 MB</li>
+        </ul>
+
+        <h3>iPhone (Companion)</h3>
+        <ul>
+            <li><strong>iOS:</strong> 17.0 or later</li>
+            <li><strong>Live Activities:</strong> iOS 17.0+</li>
+            <li><strong>Dynamic Island:</strong> iPhone 14 Pro or later</li>
+        </ul>
+
+        <h2>Tips & Best Practices</h2>
+
+        <div class="tip-box">
+            <strong>💡 On-Court Tips:</strong>
+            <ul>
+                <li>Raise your wrist to wake the watch before scoring</li>
+                <li>Use large, deliberate taps (works even with gloves)</li>
+                <li>Check the serving indicator before each rally</li>
+                <li>Use Undo immediately if you make a mistake</li>
+                <li>Keep your iPhone nearby for spectators to see Live Activity</li>
+            </ul>
+        </div>
+
+        <div class="tip-box">
+            <strong>💡 Battery Saving:</strong>
+            <ul>
+                <li>Disable Always-On Display during long tournaments</li>
+                <li>Lower screen brightness in shaded courts</li>
+                <li>Close other running apps before matches</li>
+                <li>Typical battery usage: ~5-8% per hour of play</li>
+            </ul>
+        </div>
+
+        <h2>Coming Soon</h2>
+
+        <p>Rally Score is actively being developed. Upcoming features include:</p>
+        <ul>
+            <li><strong>Stacking Coach:</strong> Visual positioning guidance for doubles play</li>
+            <li><strong>CSV Export:</strong> Export match data for analysis</li>
+            <li><strong>Unlimited History:</strong> Pro tier with no 10-match limit</li>
+            <li><strong>Custom Themes:</strong> Personalize team colors</li>
+            <li><strong>Advanced Haptics:</strong> More nuanced feedback patterns</li>
+            <li><strong>WatchConnectivity Improvements:</strong> Better sync between devices</li>
+            <li><strong>Multi-Game Matches:</strong> Best of 3/5 tournament support</li>
+            <li><strong>Statistics Dashboard:</strong> Track your performance over time</li>
+        </ul>
+
+        <div class="contact-section">
+            <h2>Need More Help?</h2>
+            <p>We're here to help! Contact us at:</p>
+            <p><a href="mailto:support@rallyscore.app">support@rallyscore.app</a></p>
+            <p style="margin-top: 20px;">Response time: Within 24-48 hours</p>
+        </div>
+
+        <h2>Additional Resources</h2>
+
+        <ul>
+            <li><a href="https://usapickleball.org/what-is-pickleball/official-rules/" target="_blank">USA Pickleball Official Rules</a></li>
+            <li><a href="privacy-policy.html">Rally Score Privacy Policy</a></li>
+            <li><a href="mailto:support@rallyscore.app">Contact Support</a></li>
+        </ul>
+
+        <div class="footer">
+            <p>&copy; 2025 Rally Score. All rights reserved.</p>
+            <p style="margin-top: 10px;">Built by pickleball players, for pickleball players.</p>
+        </div>
+    </div>
+</body>
+</html>
